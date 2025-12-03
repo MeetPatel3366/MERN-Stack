@@ -1,0 +1,28 @@
+table,th,td{
+    border-style:solid;
+    border-width: 3px;
+    border-color: gray;
+    border-collapse: collapse;
+}
+
+th
+{
+    background-color: cyan;
+}
+
+th,td{
+    text-align: center;
+    height: 50px;
+    vertical-align: top;
+}
+
+tr:nth-child(odd)
+{
+    background-color: brown;
+}
+
+.left-border{
+    background-color: aquamarine;
+    border-left:2px solid black;
+    border-radius: 5px;
+}
