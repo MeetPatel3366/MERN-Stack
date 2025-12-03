@@ -1,0 +1,39 @@
+a:link{
+    color: crimson;
+    text-decoration: none;
+    background-color: lavender;
+}
+
+a:visited{
+    color: lightgreen;
+}
+
+a:hover{
+    color: goldenrod;
+    text-decoration: underline overline;
+    text-decoration-color:darkcyan ;
+    text-decoration-thickness: 3px;
+    text-decoration-style: wavy;
+}
+
+a:active{
+    color: cadetblue;
+    text-decoration: underline;
+}
+
+.btn:link, .btn:visited{
+    background-color: red;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid black;
+}
+
+.btn:hover, .btn:active{
+    background-color: red;
+    color: black;
+    font-size: 150%;
+    font-family: monospace;
+}
+
