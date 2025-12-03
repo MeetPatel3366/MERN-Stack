@@ -1,0 +1,17 @@
+body{
+    /* background-color: blue; */
+    /* background-image: url("../Basics//images/tree.jpeg");
+    background-size: 20%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+
+    background: url("../Basics//images/tree.jpeg") no-repeat right top;
+
+}
+
+.opacity
+{
+    background-color: aqua;
+    opacity: 0.5;
+}
