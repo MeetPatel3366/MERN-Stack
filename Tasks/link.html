@@ -1,0 +1,39 @@
+<!-- Create a list of links on a webpage and set their color to blue. When a user hovers over any of the links, change the color to green and underline them. Additionally, make sure the links do not have underlines by default. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>styled links</title>
+    <style>
+      a {
+        color: blue;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      a:hover {
+        color: green;
+        text-decoration: underline;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin: 8px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="">home</a></li>
+      <li><a href="">about us</a></li>
+      <li><a href="">services</a></li>
+      <li><a href="">contact</a></li>
+      <li><a href="">privacy policy</a></li>
+    </ul>
+  </body>
+</html>
