@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box p {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+.outside {
+    background-image: url('../Basics/images/tree.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 10px;
+}
