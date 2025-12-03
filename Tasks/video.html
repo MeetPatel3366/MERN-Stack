@@ -1,0 +1,24 @@
+<!-- Create a video player with multiple sources and fallback content:
+
+Add a <video> element to play a video file.
+Provide three different source formats: MP4, WebM, and Ogg.
+Include a fallback message: "Your browser does not support the video element."
+Ensure the player controls are displayed, and set the width to 640px. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+</head>
+<body>
+
+    <video width="640" controls>
+        <source src="../Basics/public/video.mp4" type="video/mp4">
+        <source src="../Basics/public/video1.webm" type="video/webm">
+        <source src="../Basics/public/video2.ogg" type="video/ogg">
+        Your browser does not support the video element.
+    </video>
+
+</body>
+</html>
