@@ -1,0 +1,60 @@
+<!-- Design a survey form with:
+A pre-filled text input for Name with a value of John Doe.
+A dropdown menu for Favorite Color with options: Red, Blue, Green (pre-selected as Blue).
+A Submit Survey button.
+Design a table to display a schedule:
+Header: Day, Morning Session, Afternoon Session
+Merge cells for Day using rowspan to combine two rows:
+Monday, Math, English
+(rowspan cell), Science, History
+Merge Morning Session and Afternoon Session cells using colspan for a title: Session Details. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form And Schedule Table</title>
+</head>
+<body>
+
+    <h2>Survey Form</h2>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" value="John Doe"><br><br>
+
+        <label for="color">Favorite Color:</label>
+        <select id="color">
+            <option>Red</option>
+            <option selected>Blue</option>
+            <option>Green</option>
+        </select><br><br>
+
+        <button type="submit">Submit Survey</button>
+    </form>
+
+    <hr>
+
+    <h2>Schedule Table</h2>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th colspan="3">Session Details</th>
+        </tr>
+        <tr>
+            <th>Day</th>
+            <th>Morning Session</th>
+            <th>Afternoon Session</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td>Math</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>History</td>
+        </tr>
+    </table>
+
+</body>
+</html>
