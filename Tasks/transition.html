@@ -1,0 +1,32 @@
+<!-- Create a button that:
+
+Has a width of 150px, a height of 50px, a green background, and white text
+When hovered over, smoothly changes its background to dark green and text color to black
+The transition effect should take 0.5s -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button</title>
+    <style>
+        .btn{
+            width:150px;
+            height:50px;
+            background:green;
+            color:white;
+            border:none;
+            cursor:pointer;
+            transition:0.5s;
+        }
+        .btn:hover{
+            background:darkgreen;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+
+<button class="btn">Click Me</button>
+
+</body>
+</html>
