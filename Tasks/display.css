@@ -1,0 +1,23 @@
+p {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+p span {
+    display: inline;
+    color: red;
+    font-weight: bold;
+}
+
+button {
+    display: inline-block;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
