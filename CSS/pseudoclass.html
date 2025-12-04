@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paseudo class</title>
+
+    <style>
+        p{
+            display: none;
+            padding: 20px;
+        }
+        div:hover p{
+            display: block;
+            color: red;
+        }
+        h1::first-letter{
+            color: red;
+            font-size: 20px;
+        }
+        h1::first-line{
+            color: green;
+        }
+        h1::before{
+            content: "start";
+        }
+        h1::after{
+            content: "end";
+        }
+
+        ::marker{
+            color: blue;
+        }
+
+        li::selection{
+            color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        hello
+
+        <p>i am hidden</p>
+    </div>
+
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque animi natus modi dolorum impedit. Illum obcaecati veritatis esse repellat incidunt fugit amet ea tempore laudantium velit facilis, laborum itaque culpa eius est commodi inventore mollitia necessitatibus possimus! Ea quis iste eius voluptate nulla magnam, animi eaque doloremque saepe quia dicta.</h1>
+
+    <ul>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+</body>
+</html>
