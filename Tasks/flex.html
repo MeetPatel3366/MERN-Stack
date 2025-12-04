@@ -1,0 +1,51 @@
+<!-- Design a three-column layout inside a container where:
+
+The container should have a 900px width
+There should be three equal-width columns
+Each column should have a different background color
+There should be a 10px gap between the columns -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+    <style>
+      .container {
+        width: 900px;
+        display: flex;
+        gap: 10px;
+      }
+
+      .box {
+        flex: 1;
+        height: 200px;
+        color: white;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box1 {
+        background-color: red;
+      }
+
+      .box2 {
+        background-color: blue;
+      }
+
+      .box3 {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">column 1</div>
+      <div class="box box2">column 2</div>
+      <div class="box box3">column 3</div>
+    </div>
+  </body>
+</html>
