@@ -1,0 +1,39 @@
+h2{
+    color: red;
+    text-align: justify;
+    text-align-last: right;
+    direction: ltr;
+    unicode-bidi: bidi-override;
+}
+
+img.a{
+    vertical-align: baseline;
+}
+
+img.b{
+    vertical-align: text-top;
+}
+
+img.c{
+    vertical-align: text-bottom;
+}
+
+img.d{
+    vertical-align: sub;
+}
+
+img.e{
+    vertical-align: super;
+}
+
+div p{
+    text-transform: capitalize;
+    text-indent: 10px;
+    letter-spacing: 7px;
+    line-height: 5px;
+    word-spacing: 8px;
+}
+
+.text-shadow{
+   text-shadow: 4px 4px 3px red;
+}
