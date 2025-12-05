@@ -1,0 +1,73 @@
+<!-- Create an HTML form with two input fields: Username and Email, and a submit button
+Write JavaScript code that:
+Prevents form submission if any of the fields are empty
+Displays an error message below the empty field
+If both fields are filled, allows submission and displays a success message
+Print the entered values in the console if the form is submitted successfully -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>form validation</title>
+    <style>
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+        .success {
+            color: green;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>form</h2>
+
+    <form id="userForm">
+        <label>username:</label><br>
+        <input type="text" id="username"><br>
+        <span id="userError" class="error"></span><br>
+
+        <label>email:</label><br>
+        <input type="email" id="email"><br>
+        <span id="emailError" class="error"></span><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="successMsg" class="success"></p>
+
+    <script>
+        document.getElementById("userForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            document.getElementById("userError").innerText = "";
+            document.getElementById("emailError").innerText = "";
+            document.getElementById("successMsg").innerText = "";
+
+            let username = document.getElementById("username").value.trim();
+            let email = document.getElementById("email").value.trim();
+
+            let valid = true;
+
+            if (username === "") {
+                document.getElementById("userError").innerText = "username is required!";
+                valid = false;
+            }
+
+            if (email === "") {
+                document.getElementById("emailError").innerText = "email is required!";
+                valid = false;
+            }
+
+            if (valid) {
+                document.getElementById("successMsg").innerText = "Form submitted successfully!";
+                console.log("username:", username);
+                console.log("email:", email);
+            }
+        });
+    </script>
+
+</body>
+</html>
