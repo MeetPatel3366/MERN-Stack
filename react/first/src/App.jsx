@@ -4,6 +4,7 @@ import Button from './Button'
 import Input from './Input'
 import Event from './Event'
 import Goal from './Goal'
+import Product from './Product'
 
 const App = () => {
   return (
@@ -18,10 +19,16 @@ const App = () => {
       {/* <Input label='name' inputType="text" placeholder='enter name'/>
       <Input label='email' inputType="email" placeholder='enter email'/> */}
 
-      <Event/>
+      {/* <Event/>
       
       <Goal isGoal={true}/>
-      <Goal isGoal={false}/>
+      <Goal isGoal={false}/> */}
+
+        {/* task  */}
+      <h2>products</h2>
+      <Product title="iPhone 17" price={79999} availability={true} />
+      <Product title="redmi 16" price={80000} availability={false} />
+      <Product title="realme" price={50000} availability={true} />
     </div>
   )
 }
