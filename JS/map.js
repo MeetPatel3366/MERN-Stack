@@ -6,3 +6,5 @@ const fruits=new Map([
 
 let num=fruits.get("Apple")
 console.log("apple price: ",num);
+
+fruits.set("kivi",200)
