@@ -6,9 +6,14 @@ const Event = () => {
     alert(a)
     console.log(b);
   }
+
+  const handleMouseover=()=>{
+    alert("mouse over")
+  }
   return (
     <div>
       <button onClick={(e)=>shoot("Goal!",e)}>click me</button>
+      <button onMouseOver={handleMouseover}>click me</button>
     </div>
   )
 }
