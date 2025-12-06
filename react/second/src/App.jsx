@@ -4,6 +4,8 @@ import Blogs from '../pages/Blogs'
 import NoPage from '../pages/NoPage'
 import Home from '../pages/Home'
 import Applayout from '../layout/Applayout'
+import UserProfile from '../pages/UserProfile'
+import Contact from '../pages/Contact'
 
 const App = () => {
   const router=createBrowserRouter([
@@ -23,6 +25,10 @@ const App = () => {
         {
           path:'/contact',
           element:<Contact/>
+        },
+        {
+          path:"/user/:userId",
+          element:<UserProfile />
         },
         {
           path:'*',
