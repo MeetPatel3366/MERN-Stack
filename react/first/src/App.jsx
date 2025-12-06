@@ -7,6 +7,7 @@ import Goal from './Goal'
 import Product from './Product'
 import Garage from './Garage'
 import FavColor from './hooks/useState/FavColor'
+import User from './hooks/useState/User'
 
 const App = () => {
   return (
@@ -34,7 +35,9 @@ const App = () => {
 
       {/* <Garage/> */}
 
-      <FavColor/>
+      {/* <FavColor/> */}
+
+      <User/>
     </div>
   )
 }
