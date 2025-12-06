@@ -8,6 +8,7 @@ import Product from './Product'
 import Garage from './Garage'
 import FavColor from './hooks/useState/FavColor'
 import User from './hooks/useState/User'
+import UserFetch from './hooks/useEffect/UserFetch'
 
 const App = () => {
   return (
@@ -37,7 +38,9 @@ const App = () => {
 
       {/* <FavColor/> */}
 
-      <User/>
+      {/* <User/> */}
+
+      <UserFetch/>
     </div>
   )
 }
