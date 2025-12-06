@@ -6,6 +6,7 @@ import Event from './Event'
 import Goal from './Goal'
 import Product from './Product'
 import Garage from './Garage'
+import FavColor from './hooks/useState/FavColor'
 
 const App = () => {
   return (
@@ -31,7 +32,9 @@ const App = () => {
       <Product title="redmi 16" price={80000} availability={false} />
       <Product title="realme" price={50000} availability={true} /> */}
 
-      <Garage/>
+      {/* <Garage/> */}
+
+      <FavColor/>
     </div>
   )
 }
